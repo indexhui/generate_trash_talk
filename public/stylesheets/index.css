@@ -1,0 +1,125 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-decoration: none;
+  background-color: #3E4C5C;
+}
+
+a , a:hover{
+  text-decoration: none;
+}
+
+header {
+  overflow: hidden;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.navbar-brand {
+    color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+
+/* Labels for checked inputs */
+input:checked + label >.mode {
+  color:white;
+  font-weight: 700;
+  border: 2px solid #FD8E27;
+  transform: scale(1.07);
+}
+
+input {
+  display: none;
+}
+
+
+.mode_engineer {
+  background-image: url("../image/engineer.png");
+  background-size: cover;
+}
+
+.mode_designer {
+  background-image: url("../image/designer.png");
+  background-size: cover;
+}
+
+.mode_entrepreneur {
+  background-image: url("../image/entrepreneur.png");
+  background-size: cover;
+}
+
+.form-container{
+  margin: 40px auto ;
+  width: 740px;
+}
+
+.form-check{
+  display: inline-block;
+  width: 200px;
+  height: 240px;
+    margin: 0 20px;
+}
+
+
+.mode{
+  /* border: 3px solid #E2E2E2; */
+  background-color: #0A306A;
+  padding-top: 20px;
+  display: inline-block;
+  color:white;
+  font-weight: 700;
+  width: 200px;
+  height: 240px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.textarea {
+   background-color: #0A306A;
+   color: white;
+   width: 500px;
+   padding: 20px;
+  font-size: 20px;
+  float: right;
+}
+
+.result-container{
+  margin: 40px auto ;
+  width: 740px;
+}
+
+.btn {
+  float: left;
+  margin-left: 32px;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  background-color: #0A306A;
+  color: white;
+  padding: 18px 32px;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #102E5A;
+  color: white;
+}
