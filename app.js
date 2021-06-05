@@ -22,7 +22,6 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   const character = req.body.character
   const rubbish = generateTrashTalk(character)
-  console.log(character, rubbish)
   res.render('index', { character, rubbish })
 })
 
