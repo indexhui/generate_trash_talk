@@ -29,9 +29,6 @@ h2 {
   margin: 0 auto;
 }
 
-
-
-
 /* Labels for checked inputs */
 input:checked + label >.mode {
   color:white;
