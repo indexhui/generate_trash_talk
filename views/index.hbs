@@ -1,0 +1,45 @@
+<form method="POST" action="/">
+  <div class="form-container">
+    <div class="form-check col-3">
+      <input class="card_input" type="radio" name="character" id="engineer" value="engineer" {{#is character 'engineer'
+        }} checked {{/is}}>
+      <label class="form-check-label" for="engineer">
+        <div class="mode mode_engineer">
+          工程師
+        </div>
+      </label>
+    </div>
+    <div class="form-check ">
+
+      <input class="card_input" type="radio" name="character" value="designer" id="designer" {{#is character 'designer'
+        }} checked {{/is}}>
+      <label class="form-check-label" for="designer">
+        <div class="mode mode_designer">
+          設計師
+        </div>
+      </label>
+    </div>
+
+    <div class="form-check">
+      <input class="card_input" type="radio" name="character" value="entrepreneur" id="entrepreneur" {{#is
+        character 'entrepreneur' }} checked {{/is}}>
+      <label class="form-check-label" for="entrepreneur">
+        <div class="mode mode_entrepreneur">
+          創業家
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <div class="result-container">
+    <div class="btn">
+      <button type="submit">產生</button>
+    </div>
+    <div>
+      <label for="exampleFormControlTextarea1" class="form-label"></label>
+      <textarea class="textarea" id="exampleFormControlTextarea1"
+        rows="3">{{#if rubbish}} {{rubbish}} {{/if}}</textarea>
+    </div>
+
+  </div>
+</form>
